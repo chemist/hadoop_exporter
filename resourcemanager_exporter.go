@@ -274,7 +274,6 @@ func (e *Exporter) Collect(ch chan<- prometheus.Metric) {
 	e.availableMB.Collect(ch)
 	e.reservedMB.Collect(ch)
 	e.appsKilled.Collect(ch)
-	e.activeNodes.Collect(ch)
 	e.appsRunning.Collect(ch)
 	e.appsPending.Collect(ch)
 	e.appsCompleted.Collect(ch)
